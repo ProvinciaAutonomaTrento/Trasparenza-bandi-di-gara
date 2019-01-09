@@ -1,0 +1,107 @@
+﻿<%--/**
+ * Copyright (C) 2017 Provincia Autonoma di Trento
+ *
+ * This file is part of <nome applicativo>.
+ * Pitre is free software: you can redistribute it and/or modify
+ * it under the terms of the LGPL as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Pitre is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the LGPL v. 3
+ * along with Pitre. If not, see <https://www.gnu.org/licenses/lgpl.html>.
+ * 
+ */--%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+	<link rel="stylesheet" href="css/stile_od.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/stile_1.css" type="text/css" media="screen" />
+		
+	<link rel="stylesheet" href="css/stile_od.php?h=1" media="screen" type="text/css" />
+	<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<style>
+    .lungo {
+        position: relative;
+        height: 109px;       
+    
+    }
+    .sottoadx {
+        position: absolute;
+        right: 0px;
+        top: 15px;
+        max-width: 100%;               
+        background-repeat: repeat-x;
+        z-index: -2;
+    }
+    .dentroadx {
+        position: absolute;
+        top: 6px;
+        right: 2px;
+        width: 171px;
+        height: 78px;
+        border: none;
+    }
+    .adx {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 171px;
+        height: 78px;
+    }
+    .adxrela {
+        position: relative;
+        top: 0px;
+        right: 5px;
+    }
+    .dietro {
+        z-index: -1; 
+    }
+    .riempidietro {
+        max-width: 100%;
+        height: auto;
+        z-index: -1; 
+    }
+    .maxwidth1600 {
+        max-width: 1600px;
+        height: 151px;
+        z-index: -1;
+    }
+    .auto-style1 {
+        max-width: 100%;
+        height: 151px;
+        z-index: -1;
+    }
+</style>
+<html lang="it">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - APAC - trasparenza</title>
+</head>
+<body>
+ <form runat="server">
+    <div class="testata"> 
+         <div ><img class="auto-style1" src="Testata_APACsemplice.gif" alt="Logo per la stampa" width="100%"/>  
+                <div class="dentroadx">                     
+                    <a href="http://www.provincia.tn.it/index.html"><img class="dentroadx" src="logo_pat2_2012.1333548724.gif" alt="Vai al portale della Provincia Autonoma di Trento" width="171" height="78"  /></a>
+                </div>           
+         </div>
+    </div>
+    <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>v. 2.1.4 - <%: DateTime.Now %> - Agenzia per gli Appalti e i Contratti della Provincia Autonoma di Trento</p>
+            </footer>
+    </div>
+ </form>
+</body>
+</html>

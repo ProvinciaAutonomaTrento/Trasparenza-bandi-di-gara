@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>test</title>
+</head>
+<body>
+
+<table>
+<tr>
+<td text-align="center" colspan=3>Sopra soglia europea</td>
+</tr>
+<tr>
+<td>Tipologia</td>
+<td></td>
+<td>Soglia di importo</td>
+</tr>
+<tr>
+<td>appalti lavori</td>
+<td>≥</td>
+<td>5 225 000 €</td>
+</tr>
+<tr>
+<td>appalti servizi/forniture</td>
+<td>≥</td>
+<td>209 000 €</td>
+</tr>
+<tr>
+<td>concessioni lavori/servizi</td>
+<td>≥</td>
+<td>5 225 000 €</td>
+</tr>
+<tr>
+<td>servizi sociali e altri servizi specifici</td>
+<td>≥</td>
+<td>750 000 €</td>
+</tr>
+
+<tr>
+<td>settori speciali lavori</td>
+<td>≥</td>
+<td>5 225 000 €</td>
+</tr>
+
+<tr>
+<td>settori speciali servizi/forniture</td>
+<td>≥</td>
+<td>418 000 €</td>
+</tr>
+</table> 
+
+</body>
+</html>
